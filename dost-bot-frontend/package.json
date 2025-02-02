@@ -1,5 +1,6 @@
 {
   "name": "dost-bot-frontend",
+  "homepage": "https://Somil2104.github.io/dost-bot-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -42,6 +43,7 @@
     "@babel/core": "^7.26.7",
     "@babel/preset-env": "^7.26.7",
     "babel-loader": "^9.2.1",
+    "gh-pages": "^6.3.0",
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.0"
