@@ -15,7 +15,7 @@ Dost-Bot is a journal-taking web application integrated with an AI-powered chatb
 
 ## Demonstration
 
-[text](<Screen Recording 2025-02-02 at 1.11.32 PM.mov>)
+![alt text](<Screen Recording 2025-02-02 at 1.11.32 PM.mov>)
 
 ## Tech Stack
 - **Frontend**: React, Ant Design, Tailwind CSS
