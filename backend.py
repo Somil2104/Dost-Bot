@@ -11,10 +11,14 @@ from fastapi import Query
 import os
 
 app = FastAPI()
+origins = [
+    "http://localhost:3000",  
+    "https://Somil2104.github.io/Dost-Bot/dost-bot-frontend",
+]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Change this to frontend URL for security
+    allow_origins=origins,  # Change this to frontend URL for security
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
