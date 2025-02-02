@@ -15,7 +15,7 @@ Dost-Bot is a journal-taking web application integrated with an AI-powered chatb
 
 ## Demonstration
 
-![alt text](<Screen Recording 2025-02-02 at 1.11.32 PM.mov>)
+![Working Demo](<Dostbot (1) (1).mp4>)
 
 ## Tech Stack
 - **Frontend**: React, Ant Design, Tailwind CSS
@@ -27,6 +27,7 @@ Dost-Bot is a journal-taking web application integrated with an AI-powered chatb
 - Node.js & npm
 - Python 3
 - Git
+- hugging face api key
 
 ### Setup Frontend
 ```sh
@@ -40,7 +41,7 @@ npm start
 pip install -r requirements.txt
 uvicorn backend:app --reload
 ```
-
+add the hugging face api key into the code where the comment is being added 
 ## Deployment
 ### Frontend Deployment (Vercel/Netlify)
 ```sh
