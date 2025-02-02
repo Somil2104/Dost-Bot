@@ -8,6 +8,7 @@ import requests
 from typing import List
 from transformers import pipeline
 from fastapi import Query
+import os
 
 app = FastAPI()
 
