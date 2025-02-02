@@ -1,81 +1,3 @@
-// import { useState, useEffect } from "react";
-// import { Input, Button, List, Card, Tag } from "antd";
-// import axios from "axios";
-
-// export default function JournalEntry() {
-//   const [journal, setJournal] = useState("");
-//   const [entries, setEntries] = useState([]);
-
-//   useEffect(() => {
-//     axios
-//       .get("http://localhost:7000/get_journals/")
-//       .then((res) => { setEntries(res.data.journals)});
-//   }, []);
-
-//   const submitEntry = async () => {
-//     if (!journal) return;
-//     await axios.post("http://localhost:7000/add_entry/", { text: journal });
-//     var emotion;
-//     await axios.get("http://localhost:7000/get_emotions/", {
-//         params: { query:  journal }
-//     }).then(response => {
-//         emotion = response.data.mood
-//     });
-//     setEntries([
-//       ...entries,
-//       { text: journal, sentiment: getSentiment(emotion) },
-//     ]);
-//     setJournal("");
-//   };
-
-//   const getSentiment = (text) => {
-//     console.log(text);
-//     if (
-//       text === "POSITIVE"
-//     )
-//       return "😃";
-//     if (
-//       text === "NEUTRAL"
-//     )
-//       return "😐";
-//     if (
-//         text === "NEGATIVE"
-//       )
-//         return "😞";
-//     else return text;
-//   };
-
-//   return (
-//     <div className="max-w-lg mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg">
-//       <h2 className="text-xl font-bold mb-4">✍️ Add a Journal Entry</h2>
-//       <Input.TextArea
-//         rows={4}
-//         value={journal}
-//         onChange={(e) => setJournal(e.target.value)}
-//         placeholder="Write about your day..."
-//       />
-//       <Button type="primary" className="mt-3" onClick={submitEntry}>
-//         Save Entry
-//       </Button>
-
-//       <h3 className="text-lg font-semibold mt-6">📜 Past Entries</h3>
-//       <List
-//         className="mt-3"
-//         bordered
-//         dataSource={entries}
-//         renderItem={(entry) => (
-//           <List.Item>
-//             <Card className="w-full">
-//               <p>{entry.text}</p>
-//               <Tag>{getSentiment(entry.sentiment)}</Tag>
-//             </Card>
-//           </List.Item>
-//         )}
-//       />
-//     </div>
-//   );
-// }
-
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import {
@@ -103,7 +25,7 @@ export default function JournalPage() {
   const navigate = useNavigate();
   const [journalEntry, setJournalEntry] = useState("");
   const [isDrawerOpen, setDrawerOpen] = useState(false);
-  const [pastEntries, setPastEntries] = useState();
+  const [pastEntries, setPastEntries] = useState([]);
 
   useEffect(() => {
     axios.get("http://localhost:7000/get_journals/").then((res) => {
@@ -113,7 +35,6 @@ export default function JournalPage() {
 
   const handleSave = async () => {
     console.log("Saved Journal Entry:", journalEntry);
-    // navigate("/"); // Redirect back to home after saving
     if (!journalEntry) return;
     await axios.post("http://localhost:7000/add_entry/", {
       text: journalEntry,
