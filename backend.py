@@ -30,7 +30,7 @@ index = faiss.IndexFlatL2(d)
 journal_entries = []  # Stores journal text
 sentiment_entries = []  # Stores sentiment labels
 
-HUGGINGFACE_API_KEY = ""  # Replace with your key
+HUGGINGFACE_API_KEY = os.getenv("HF_API_KEY")
 MODEL_NAME = "google/flan-t5-large"  # LLM for responses
 
 class JournalEntry(BaseModel):
@@ -139,7 +139,7 @@ def query_journal(request: QueryRequest):
 
     # Generate response
     headers = {"Authorization": f"Bearer {HUGGINGFACE_API_KEY}"}
-    payload = {"inputs": prompt, "parameters": {"max_new_tokens": 200}}
+    payload = {"inputs": prompt, "parameters": {"max_new_tokens": 250}}
     
     response = requests.post(f"https://api-inference.huggingface.co/models/{MODEL_NAME}", json=payload, headers=headers)
 
