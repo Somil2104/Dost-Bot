@@ -28,7 +28,7 @@ export default function JournalPage() {
   const [pastEntries, setPastEntries] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:7000/get_journals/").then((res) => {
+    axios.get("https://dost-bot-production.up.railway.app/get_journals/").then((res) => {
       setPastEntries(res.data.journals);
     });
   }, []);
@@ -36,12 +36,12 @@ export default function JournalPage() {
   const handleSave = async () => {
     console.log("Saved Journal Entry:", journalEntry);
     if (!journalEntry) return;
-    await axios.post("http://localhost:7000/add_entry/", {
+    await axios.post("https://dost-bot-production.up.railway.app/add_entry/", {
       text: journalEntry,
     });
     var emotion;
     await axios
-      .get("http://localhost:7000/get_emotions/", {
+      .get("https://dost-bot-production.up.railway.app/get_emotions/", {
         params: { query: journalEntry },
       })
       .then((response) => {

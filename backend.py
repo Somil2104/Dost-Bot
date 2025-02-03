@@ -13,7 +13,7 @@ import os
 app = FastAPI()
 origins = [
     "http://localhost:3000",  
-    "https://Somil2104.github.io/Dost-Bot/dost-bot-frontend",
+    "https://somil2104.github.io/Dost-Bot",
 ]
 
 app.add_middleware(

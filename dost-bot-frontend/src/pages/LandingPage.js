@@ -24,7 +24,7 @@ export default function LandingPage() {
   const sendMessage = async () => {
     if (!message.trim()) return;
     try {
-      const response = await axios.post("http://localhost:7000/query/", { query: message });
+      const response = await axios.post("https://dost-bot-production.up.railway.app/query/", { query: message });
       setChat((prevChat) => [...prevChat, { user: message, bot: response.data.response }]);
       setMessage("");
     } catch (error) {
