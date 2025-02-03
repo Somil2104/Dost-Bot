@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Dost-Bot/dost-bot-frontend/static/css/main.e5cdda46.css",
-    "main.js": "/Dost-Bot/dost-bot-frontend/static/js/main.ec98147b.js",
-    "static/js/462.9a019d98.chunk.js": "/Dost-Bot/dost-bot-frontend/static/js/462.9a019d98.chunk.js",
-    "index.html": "/Dost-Bot/dost-bot-frontend/index.html",
-    "main.e5cdda46.css.map": "/Dost-Bot/dost-bot-frontend/static/css/main.e5cdda46.css.map",
-    "main.ec98147b.js.map": "/Dost-Bot/dost-bot-frontend/static/js/main.ec98147b.js.map",
-    "462.9a019d98.chunk.js.map": "/Dost-Bot/dost-bot-frontend/static/js/462.9a019d98.chunk.js.map"
+    "main.css": "/Dost-Bot/static/css/main.e5cdda46.css",
+    "main.js": "/Dost-Bot/static/js/main.24d9989c.js",
+    "static/js/462.9a019d98.chunk.js": "/Dost-Bot/static/js/462.9a019d98.chunk.js",
+    "index.html": "/Dost-Bot/index.html",
+    "main.e5cdda46.css.map": "/Dost-Bot/static/css/main.e5cdda46.css.map",
+    "main.24d9989c.js.map": "/Dost-Bot/static/js/main.24d9989c.js.map",
+    "462.9a019d98.chunk.js.map": "/Dost-Bot/static/js/462.9a019d98.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e5cdda46.css",
-    "static/js/main.ec98147b.js"
+    "static/js/main.24d9989c.js"
   ]
 }
