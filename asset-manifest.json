@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Dost-Bot/static/css/main.e5cdda46.css",
-    "main.js": "/Dost-Bot/static/js/main.24d9989c.js",
+    "main.js": "/Dost-Bot/static/js/main.c4c11372.js",
     "static/js/462.9a019d98.chunk.js": "/Dost-Bot/static/js/462.9a019d98.chunk.js",
     "index.html": "/Dost-Bot/index.html",
     "main.e5cdda46.css.map": "/Dost-Bot/static/css/main.e5cdda46.css.map",
-    "main.24d9989c.js.map": "/Dost-Bot/static/js/main.24d9989c.js.map",
+    "main.c4c11372.js.map": "/Dost-Bot/static/js/main.c4c11372.js.map",
     "462.9a019d98.chunk.js.map": "/Dost-Bot/static/js/462.9a019d98.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e5cdda46.css",
-    "static/js/main.24d9989c.js"
+    "static/js/main.c4c11372.js"
   ]
 }
