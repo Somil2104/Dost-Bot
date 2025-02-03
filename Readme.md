@@ -2,6 +2,8 @@
 
 Dost-Bot is a journal-taking web application integrated with an AI-powered chatbot that provides sentiment analysis and thoughtful responses to user entries. It is helpful in personalizing with the user and can act as a friend to the user in time of needs. Just like we share our day to day conversation with our friends, through dost bot, share your experiences and love the have a chat with it.
 
+## View deployment at: https://somil2104.github.io/Dost-Bot
+
 ## Features
 - ✍️ **Journal Writing** – Add, view, and manage journal entries.
 - 📅 **Calendar Integration** – View past entries on a calendar.
