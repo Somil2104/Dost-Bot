@@ -47,8 +47,8 @@ class QueryRequest(BaseModel):
 @app.get("/get_journals/")
 def get_journals():
     """Retrieves all past journal entries along with their sentiment."""
-    if not journal_entries:
-        raise HTTPException(status_code=404, detail="No journal entries available.")
+    # if not journal_entries:
+    #     raise HTTPException(status_code=404, detail="No journal entries available.")
     
     # Create a list of journal entries and their sentiments
     journal_with_sentiment = [{"text": entry, "sentiment": sentiment} 
